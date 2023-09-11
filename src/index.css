@@ -1,3 +1,7 @@
+*{
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,55 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+#mainpage{
+
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 1.5em; */
+  padding: 1.3em;
+  background-color: #FAFAFA;
+
+}
+
+.title{
+padding: 1.5em;
+}
+
+.form{
+  margin-top: -2em;
+}
+.username{
+  margin: 1em;
+}
+
+.password{
+}
+
+.usernameInput {
+  background-color: #FAFAFA;
+  border-width: 0.1em;
+  border-radius: 0.8em;
+  border-style:hidden;
+  height:2.2em;
+  width: 13.8em;
+  margin-left: 0.6em;
+  font-size: medium;
+}
+
+.passwordInput {
+  background-color: #FAFAFA;
+  border-width: 0.1em;
+  border-radius: 0.8em;
+  border-style: hidden;
+  height: 2.2em;
+  width: 13.8em;
+  margin-left: 0.9em;
+  margin-top: 0.5em;
+  font-size: medium;
 }

@@ -2,7 +2,7 @@
 export default function ThankYouPage(){
     return(
         <div className="thankyou">
-            <h2>Thank You!</h2>
+            <h2 className="title">Thank You!</h2>
         </div>
     );
 
