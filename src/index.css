@@ -1,7 +1,3 @@
-*{
-
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -27,15 +23,16 @@ code {
   /* margin-top: 1.5em; */
   padding: 1.3em;
   background-color: #FAFAFA;
-
 }
 
 .title{
 padding: 1.5em;
+text-align: center;
 }
 
 .form{
   margin-top: -2em;
+  text-align: center;
 }
 .username{
   margin: 1em;

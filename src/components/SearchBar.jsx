@@ -6,7 +6,7 @@ export default function SearchBar(){
               
             <Link to = "/loginpage">Login</Link>
             <Link to = "/homepage">Home</Link> 
-            <Link to = "/shoppingcart">Shopping Cart</Link>
+            <Link to = "/shoppingcart">Cart</Link>
             <Link to = "/checkoutpage">Checkout</Link>
 
         </div>
