@@ -1,13 +1,39 @@
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom'
 
 export default function SearchBar(){
     return(
         <div id="navbar">
-              
-            <Link to = "/loginpage">Login</Link>
-            <Link to = "/homepage">Home</Link> 
-            <Link to = "/shoppingcart">Cart</Link>
-            <Link to = "/checkoutpage">Checkout</Link>
+
+                    <Link to = "/loginpage">Login</Link>
+                    <Link to = "/homepage">Home</Link> 
+                    <Link to = "/shoppingcart">Cart</Link>
+                    <Link to = "/checkoutpage">Checkout</Link>
+           
+                            <h1 className='website-name'>SNAZZY</h1>
+
+            <Navbar className="searchbar">
+
+           
+                    <Form>
+                        <Row>
+                        <Col xs="auto">
+                            <Form.Control
+                            type="text"
+                            placeholder="Search styles, brands & more"
+                            className=" mr-sm-2"
+                            />
+                        </Col>
+                        <Col xs="auto">
+                            <Button className='searchbutton' type="submit">Search</Button>
+                        </Col>
+                        </Row>
+                    </Form>
+                    </Navbar>
 
         </div>
     );
@@ -23,12 +49,7 @@ export default function SearchBar(){
 
 
 
-// import Navbar from 'react-bootstrap/Navbar';
-// import Form from 'react-bootstrap/Form';
-// import Button from 'react-bootstrap/Button';
-// import InputGroup from 'react-bootstrap/InputGroup';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+
 
 
 // function SearchBar() {

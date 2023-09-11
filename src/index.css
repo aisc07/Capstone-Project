@@ -17,12 +17,52 @@ code {
 
 }
 
+
+a:hover{
+  /* color: #874A5B; */
+}
+
+a{
+  font-size: 1.1em;
+ 
+  
+}
+
 #navbar{
   display: flex;
   justify-content: space-evenly;
+  color: #050606;
+  
   /* margin-top: 1.5em; */
   padding: 1.3em;
-  background-color: #FAFAFA;
+  background-color: #E3CDBC;
+  ;
+  /* margin-right: 5em; */
+  /* padding-left: 20em; */
+}
+
+.website-name{
+  display: flex;
+  /* text-align: center; */
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  /* margin-left: 5em; */
+}
+
+.searchbar{
+  margin-left: 10em;
+}
+
+.searchbutton{
+  /* margin-right: 6em; */
+  width: 5.5em;
+
+
+}
+
+.mr-sm-2{
+  margin-right: 30em;
 }
 
 .title{
@@ -62,4 +102,22 @@ text-align: center;
   margin-left: 0.9em;
   margin-top: 0.5em;
   font-size: medium;
+}
+
+.displayUsername{
+  text-align: center;
+  display: flex;
+  margin-top: -10em;
+  margin-left: 2em;
+}
+
+.submitButton{
+  background-color: #874A5B;
+  color: #ECF1EB;
+  height: 2.2em;
+  border-width: 0.1em;
+  border-radius: 0.8em;
+  width: 13.8em;
+  margin-left: 5em;
+  /* font-size: large; */
 }

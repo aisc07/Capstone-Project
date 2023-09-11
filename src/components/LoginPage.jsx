@@ -1,4 +1,6 @@
 import { useState } from "react";
+import HomePage from "./HomePage";
+import {Route, Routes} from 'react-router-dom'
 
 export default function LoginPage(){
 
@@ -47,13 +49,12 @@ export default function LoginPage(){
             </label>
         <br/>
         <br/>
-            <button className="submitButton" type="submit">Submit</button>
+            <button className="submitButton" type="submit">Continue</button>
             
         </form>
-       {submitted ? <h3 className="displayUsername">{username}</h3> : false}
+       {submitted ? <h3 className="displayUsername">{username}</h3>: false}
        
      
-    
     </div>
     );  
 };
