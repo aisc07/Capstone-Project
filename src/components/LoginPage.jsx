@@ -1,13 +1,14 @@
 import { useState } from "react";
 import HomePage from "./HomePage";
-import {Route, Routes} from 'react-router-dom'
+// import {Route, Routes} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage(){
-
+   
     const[username, setUsername]=useState("")
     const[password, setPassword]=useState("")
     const[submitted, setSubmitted]=useState(null)
-
+    const navigate = useNavigate()
 
     async function handleSubmit(event){
         event.preventDefault();
@@ -16,9 +17,11 @@ export default function LoginPage(){
                 const response = await fetch(
                      "https://fsa-jwt-practice.herokuapp.com/signup",{
                  method: "POST",
-                 body: JSON.stringify({username, password})
-
-                     });
+                 body: JSON.stringify({
+                    username, 
+                    password
+                })
+            });
                  const result = await response.json();
                  console.log(result);
                  const data = {username};
@@ -31,8 +34,6 @@ export default function LoginPage(){
     return(
             <div className="loginpage">
                 <h2 className="title">Login</h2>
-
- 
 
         <form className="form" onSubmit={handleSubmit}>
 
@@ -49,7 +50,7 @@ export default function LoginPage(){
             </label>
         <br/>
         <br/>
-            <button className="submitButton" type="submit">Continue</button>
+            <button className="submitButton" type="submit" onClick={()=>navigate("/homepage")}>Continue</button>
             
         </form>
        {submitted ? <h3 className="displayUsername">{username}</h3>: false}

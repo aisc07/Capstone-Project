@@ -14,31 +14,36 @@ code {
 
 
 #mainpage{
-
+/* margin-left: 4em; */
 }
 
-
-a:hover{
-  /* color: #874A5B; */
-}
 
 a{
   font-size: 1.1em;
- 
-  
+  margin-top: 2em;
+  margin-right: -10em;
+  color: white;
+
 }
+
+a:hover{
+  color: white;
+}
+
+
+
 
 #navbar{
   display: flex;
   justify-content: space-evenly;
-  color: #050606;
-  
+  color: white;
   /* margin-top: 1.5em; */
-  padding: 1.3em;
-  background-color: #E3CDBC;
-  ;
-  /* margin-right: 5em; */
-  /* padding-left: 20em; */
+  padding: 1.5em;
+  background-color: #F41F4E;
+  border-width: 0.4em;
+  border-color: #FFC2C7;
+  border-bottom-style: double;
+  
 }
 
 .website-name{
@@ -46,23 +51,24 @@ a{
   /* text-align: center; */
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
+  font-weight: bold;
   letter-spacing: 0.1em;
-  /* margin-left: 5em; */
+  margin-left: -2.7em;
 }
 
 .searchbar{
-  margin-left: 10em;
+  /* margin-left: 2em; */
+  /* margin-right: 5em; */
+ 
 }
 
 .searchbutton{
   /* margin-right: 6em; */
   width: 5.5em;
-
-
 }
 
 .mr-sm-2{
-  margin-right: 30em;
+  margin-right: 18em;
 }
 
 .title{
@@ -117,7 +123,7 @@ text-align: center;
   height: 2.2em;
   border-width: 0.1em;
   border-radius: 0.8em;
-  width: 13.8em;
+  /* width: 13.8em; */
   margin-left: 5em;
   /* font-size: large; */
 }
