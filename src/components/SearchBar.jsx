@@ -8,7 +8,8 @@ import {Link} from 'react-router-dom'
 export default function SearchBar(){
     return(
         <div id="navbar">
-                            <h1 className='website-name'><h4>on</h4>FLEEK</h1>
+                          <sub><h4>on</h4></sub>
+                          <h1 className='website-name'>FLEEK</h1>
 
             <Navbar className="searchbar">
 

@@ -10,6 +10,7 @@ export default function MainPage(){
             <div id="mainpage">
                 <Routes>
                     <Route path = "/loginpage" element = {<LoginPage/>}/>
+                    <Route path = "/" element = {<MainPage/>}/>
                     <Route path = "/homepage" element = {<HomePage/>}/>
                     <Route path = "/shoppingcart" element = {<ShoppingCart/>}/>
                     <Route path = "/checkoutpage" element = {<CheckoutPage/>}/>
