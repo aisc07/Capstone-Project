@@ -8,12 +8,18 @@ import {Link} from 'react-router-dom'
 export default function SearchBar(){
     return(
         <div id="navbar">
-                          <sub><h4>on</h4></sub>
-                          <h1 className='website-name'>FLEEK</h1>
 
+                                {/* LINKS */}
+                    <Link to = "/loginpage">Login</Link>
+                    <Link to = "/homepage">Home</Link> 
+                    <Link to = "/shoppingcart">Cart</Link>
+                    <Link to = "/checkoutpage">Checkout</Link>
+
+                                    {/* WEBSITE TITLE */}
+                    <h1 className='website-name'><sub><h4>on</h4></sub>FLEEK</h1>
+                         
             <Navbar className="searchbar">
-
-           
+                
                     <Form>
                         <Row>
                         <Col xs="auto">
@@ -29,13 +35,6 @@ export default function SearchBar(){
                         </Row>
                     </Form>
                     </Navbar>
-
-
-                    <Link to = "/loginpage">Login</Link>
-                    <Link to = "/homepage">Home</Link> 
-                    <Link to = "/shoppingcart">Cart</Link>
-                    <Link to = "/checkoutpage">Checkout</Link>
-
         </div>
 
         

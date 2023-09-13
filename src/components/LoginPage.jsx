@@ -1,5 +1,5 @@
 import { useState } from "react";
-import HomePage from "./HomePage";
+
 // import {Route, Routes} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ export default function LoginPage(){
             <label className="password">
         <br/>
             Password:{""}
-                <input className="passwordInput" type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <input className="passwordInput" type="current-password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
             </label>
         <br/>
         <br/>
