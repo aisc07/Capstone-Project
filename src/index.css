@@ -19,36 +19,33 @@ code {
 
 
 a, a:link, a:visited{
-  font-size: 1.1em;
+  font-size: 1.05em;
   margin-top: 1em;
   /* margin-left: -5em; */
-  color: white;
-
+  color: #FBFBFB;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 a:hover{
-  color: #FFC2C7;
+  color: #000000;
 }
-
-
-
 
 #navbar{
   display: flex;
   justify-content: space-evenly;
-  color: white;
-  /* margin-top: 1.5em; */
+  color: #FBFBFB;
   padding: 1.5em;
   background-color: #F41F4E;
-  border-width: 0.4em;
+  border-width: 0.8em;
   border-color: #FFC2C7;
-  border-bottom-style: double;
+  /* border-top-style:double; */
+  border-bottom-style:double;
   
 }
 
 .website-name{
   display:flex;
-  /* text-align: center; */
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: bold;
@@ -63,13 +60,15 @@ a:hover{
 }
 
 .searchbutton{
-  /* position: absolute; */
-  /* margin-right: 6em; */
   width: 5.5em;
+  font-weight: 500 !important;
+  background-color: #000000 !important;
+  border-color:#000000 !important;
 }
 
 .mr-sm-2{
   margin-right: 18em;
+  border-color: #F41F4E !important;
 }
 
 .title{
@@ -127,4 +126,12 @@ text-align: center;
   /* width: 13.8em; */
   margin-left: 5em;
   /* font-size: large; */
+}
+
+.all{
+  /* float:left; */
+  margin: 5em;
+}
+.row{
+  /* margin: 2em; */
 }
