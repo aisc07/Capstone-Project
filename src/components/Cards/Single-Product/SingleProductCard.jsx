@@ -1,8 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export default function AllProductsCard({product}){
+export default function SingleProductCard({product}){
        console.log(product)
+
+
     return(
         <div className="row">
           <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -16,7 +18,7 @@ export default function AllProductsCard({product}){
         {/* <Card.Header>{"Rating: "}{product.rating.rate}</Card.Header> */}
         {/* <Card.Footer>{"Count: "}{product.rating.count}</Card.Footer> */}
         <Card.Text>{product.description}</Card.Text>
-        <Button variant="primary">See more</Button>
+        <Button variant="primary">Add to Bag</Button>
       </Card.Body>
     </Card>
           </div>

@@ -32,7 +32,7 @@ export default function LoginPage(){
                 setSubmitted(true);
  };   
     return(
-            <div className="loginpage">
+            <div className="login-page">
                 <h2 className="title">Login</h2>
 
         <form className="form" onSubmit={handleSubmit}>
@@ -50,7 +50,7 @@ export default function LoginPage(){
             </label>
         <br/>
         <br/>
-            <button className="submitButton" type="submit" onClick={()=>navigate("/homepage")}>Continue</button>
+            <button className="submitButton" type="submit" onClick={()=>navigate("/home-page")}>Continue</button>
             
         </form>
        {submitted ? <h3 className="displayUsername">{username}</h3>: false}
