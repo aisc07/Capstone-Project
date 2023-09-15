@@ -1,13 +1,11 @@
 import { useState } from "react";
-
-// import {Route, Routes} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
-export default function LoginPage(){
+export default function SignInPage(){
    
     const[username, setUsername]=useState("")
     const[password, setPassword]=useState("")
-    const[submitted, setSubmitted]=useState(null)
+    const[submitted, setSubmitted]=useState(false)
     const navigate = useNavigate()
 
     async function handleSubmit(event){
@@ -15,11 +13,11 @@ export default function LoginPage(){
      
              try{
                 const response = await fetch(
-                     "https://fsa-jwt-practice.herokuapp.com/signup",{
+                     'https://fakestoreapi.com/auth/login',{
                  method: "POST",
                  body: JSON.stringify({
-                    username, 
-                    password
+                    username: 'mor_2314', 
+                    password: '83r5^-'
                 })
             });
                  const result = await response.json();
@@ -32,30 +30,29 @@ export default function LoginPage(){
                 setSubmitted(true);
  };   
     return(
-            <div className="login-page">
-                <h2 className="title">Login</h2>
+            <div className='sign-in-page'>
+                <h2 className='title'>Sign In</h2>
 
-        <form className="form" onSubmit={handleSubmit}>
+        <form className='form' onSubmit={handleSubmit}>
 
-            <label className="username">
+            <label className='username'>
             Username:{""}
-                <input className="usernameInput" value={username} onChange={(e)=>setUsername(e.target.value)}/>           
+                <input className='username-input' value={username} onChange={(e)=>setUsername(e.target.value)}/>           
             </label>
         <br/>
 
             <label className="password">
         <br/>
             Password:{""}
-                <input className="passwordInput" type="current-password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <input className='password-input' type='current-password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
             </label>
         <br/>
         <br/>
-            <button className="submitButton" type="submit" onClick={()=>navigate("/home-page")}>Continue</button>
+            <button className='submit-button' type='submit' onClick={()=>navigate('/home-page')}>Continue</button>
             
         </form>
-       {submitted ? <h3 className="displayUsername">{username}</h3>: false}
+       {submitted ? <h3 className='display-username'>{username}</h3>: false}
        
-     
     </div>
     );  
 };
