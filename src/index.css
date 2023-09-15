@@ -74,7 +74,6 @@ a:hover{
   border-color:#000000 !important;
 }
 
-
 .mr-sm-2{
   margin-right: 18em;
   border-color: #F41F4E !important;
@@ -86,22 +85,28 @@ text-align: center;
 }
 
 /*USER SIGN IN*/
+.sign-in-title{
+margin-top: 1.5em;
+text-align: center;
+}
 
 .form{
-  margin-top: -2em;
+  margin-top: 3em;
+  margin-right: 4em;
   text-align: center;
 }
 .username{
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 .password{
+  /* margin: 1em; */
 }
 
 .username-input {
-  background-color: #FAFAFA;
+  background-color:#FFC2C7;
   border-width: 0.1em;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   border-style:hidden;
   height:2.2em;
   width: 13.8em;
@@ -110,9 +115,9 @@ text-align: center;
 }
 
 .password-input {
-  background-color: #FAFAFA;
+  background-color:#FFC2C7;
   border-width: 0.1em;
-  border-radius: 0.8em;
+  border-radius: 0.5em;
   border-style: hidden;
   height: 2.2em;
   width: 13.8em;
@@ -129,13 +134,16 @@ text-align: center;
 }
 
 .submit-button{
-  background-color: #874A5B;
-  color: #ECF1EB;
+  background-color:#F41F4E;
+  color:#FBFBFB;
   height: 2.2em;
   border-width: 0.1em;
-  border-radius: 0.8em;
-  /* width: 13.8em; */
-  margin-left: 5em;
+  border-radius: 0.5em;
+  border-color: #F41F4E;
+  font-weight: bold;
+  width: 13.8em;
+  margin-left: 5.3em;
+  margin-top: 1em;
   /* font-size: large; */
 }
 
